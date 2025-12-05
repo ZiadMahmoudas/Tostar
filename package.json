@@ -1,0 +1,71 @@
+{
+  "name": "ziko-toaster",
+  "version": "1.0.2",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["toast", "notification", "toaster", "ziko"],
+   "files": ["dist", "src", "README.md"],
+
+  "license": "MIT",
+  "description": "Lightweight toast notification library"
+}
+
+{
+  "name": "@Ziko-toaster",
+  "version": "1.0.0",
+  "description": "🎉 Professional toast notification library with RTL support, animations, and zero dependencies",
+  "main": "dist/toast.min.js",
+  "module": "src/toast.js",
+  "unpkg": "dist/toast.min.js",
+  "jsdelivr": "dist/toast.min.js",
+  "types": "toast.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "toast.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build:js",
+    "build:js": "terser src/toast.js -o dist/toast.min.js -c -m --comments false",
+    "dev": "live-server examples/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "toast",
+    "notification",
+    "alert",
+    "message",
+    "snackbar",
+    "rtl",
+    "arabic",
+    "notification-library",
+    "toast-notification",
+    "ui",
+    "frontend",
+    "javascript",
+    "vanilla-js",
+    "zero-dependencies"
+  ],
+  "author": {
+    "name": "Ziad Mahmoud",
+    "email": "ziadbobo78@gmail.com",
+    "url": "https://curious-snickerdoodle-30c942.netlify.app/staticPage.com"
+  },
+   "type": "commonjs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/advanced-toast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/advanced-toast/issues"
+  },
+  "homepage": "https://github.com/yourusername/advanced-toast#readme",
+  "devDependencies": {
+    "terser": "^5.19.0"
+  }
+}
