@@ -1,103 +1,11 @@
 @import "https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css";
-    * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .demo-container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        .demo-container h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #333;
-            font-size: 28px;
-        }
-
-        .controls {
-            display: grid;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .control-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .control-group label {
-            font-weight: 600;
-            color: #555;
-            font-size: 14px;
-        }
-
-        select, input {
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: all 0.3s;
-        }
-
-        select:focus, input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .buttons-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .btn {
-            padding: 14px;
-            border: none;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn:active {
-            transform: translateY(0);
-        }
-
-        .btn-success { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
-        .btn-error { background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); }
-        .btn-warning { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .btn-info { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-
         /* Toast Styles */
+        :root{
+          --success:#38ef7d;
+          --error:"#f45c43";
+          --warning:"#f5576c";
+          --info:"#00f2fe";
+        }
         .toast-container {
             position: fixed;
             z-index: 99999;
@@ -145,22 +53,22 @@
         /* Toast Types */
         .my-toast.success {
             background: linear-gradient(135deg, rgba(17, 153, 142, 0.1), rgba(56, 239, 125, 0.1));
-            border-left-color: #38ef7d;
+            border-left-color:var(--success) ;
         }
 
         .my-toast.error {
             background: linear-gradient(135deg, rgba(235, 51, 73, 0.1), rgba(244, 92, 67, 0.1));
-            border-left-color: #f45c43;
+            border-left-color: var(--error);
         }
 
         .my-toast.warning {
             background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1));
-            border-left-color: #f5576c;
+            border-left-color:var(--warning) ;
         }
 
         .my-toast.info {
             background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1));
-            border-left-color: #00f2fe;
+            border-left-color:var(--info) ;
         }
 
         /* Animations */
@@ -186,22 +94,22 @@
         }
 
         .my-toast.success .toast-icon-wrapper {
-            background: #38ef7d;
+            background: var(--success);
             color: white;
         }
 
         .my-toast.error .toast-icon-wrapper {
-            background: #f45c43;
+            background: var(--error);
             color: white;
         }
 
         .my-toast.warning .toast-icon-wrapper {
-            background: #f5576c;
+            background: var(--warning);
             color: white;
         }
 
         .my-toast.info .toast-icon-wrapper {
-            background: #00f2fe;
+            background: var(--info);
             color: white;
         }
 
@@ -257,10 +165,10 @@
             animation: progressShrink linear forwards;
         }
 
-        .my-toast.success .toast-progress { background: #38ef7d; }
-        .my-toast.error .toast-progress { background: #f45c43; }
-        .my-toast.warning .toast-progress { background: #f5576c; }
-        .my-toast.info .toast-progress { background: #00f2fe; }
+        .my-toast.success .toast-progress { background: var(--success); }
+        .my-toast.error .toast-progress { background: var(--error); }
+        .my-toast.warning .toast-progress { background: var(--warning); }
+        .my-toast.info .toast-progress { background: var(--info); }
 
         @keyframes progressShrink {
             from { transform: scaleX(1); }
@@ -273,8 +181,5 @@
                 min-width: calc(100vw - 40px);
                 max-width: calc(100vw - 40px);
             }
-            
-            .buttons-grid {
-                grid-template-columns: 1fr;
-            }
+
         }
