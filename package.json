@@ -1,21 +1,18 @@
 {
   "name": "ziko-toaster",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "🎉 Professional toast notification library with RTL support, animations, and zero dependencies",
   "main": "dist/toast.min.js",
-  "module": "dist/toast.esm.js",
+  "style": "dist/toast.css",
   "unpkg": "dist/toast.min.js",
   "jsdelivr": "dist/toast.min.js",
-  "style": "dist/toast.min.css",
   "files": [
     "dist",
-    "src",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
-    "build": "npm run build:js",
-    "build:js": "terser src/toast.js -o dist/toast.min.js -c -m --comments false",
-    "build:css": "cleancss src/toast.css -o dist/toast.min.css src/style.css",
+    "build": "npx terser src/toast.js -o dist/toast.min.js -c -m && copy src\\toast.css dist\\toast.css",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -37,7 +34,6 @@
     "url": "git+https://github.com/ZiadMahmoudas/Tostar.git"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.6.3",
-    "terser": "^5.44.1"
+    "terser": "^5.19.0"
   }
 }
