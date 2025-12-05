@@ -1,23 +1,19 @@
 {
   "name": "ziko-toaster",
-  "version": "1.1.0",
+  "version": "1.1.8",
   "description": "🎉 Professional toast notification library with RTL support, animations, and zero dependencies",
   "main": "dist/toast.min.js",
-  "module": "src/toast.js",
+  "module": "dist/toast.esm.js",
   "unpkg": "dist/toast.min.js",
   "jsdelivr": "dist/toast.min.js",
-  "types": "src/toast.d.ts",
   "files": [
     "dist",
     "src",
-    "src/toast.d.ts",
-    "README.md",
-    "LICENSE"
+    "README.md"
   ],
   "scripts": {
     "build": "npm run build:js",
     "build:js": "terser src/toast.js -o dist/toast.min.js -c -m --comments false",
-    "dev": "live-server .",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -27,29 +23,18 @@
     "message",
     "snackbar",
     "rtl",
-    "arabic",
-    "notification-library",
-    "toast-notification",
-    "ui",
-    "frontend",
-    "javascript",
-    "vanilla-js",
-    "zero-dependencies"
+    "arabic"
   ],
   "author": {
     "name": "Ziad Mahmoud",
-    "email": "ziadbobo78@gmail.com",
-    "url": "https://curious-snickerdoodle-30c942.netlify.app/staticPage.com"
+    "email": "ziadbobo78@gmail.com"
   },
-  "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZiadMahmoudas/Tostar"
+    "url": "git+https://github.com/ZiadMahmoudas/Tostar.git"
   },
-  "homepage": "https://github.com/ZiadMahmoudas/Tostar#readme",
   "devDependencies": {
-    "terser": "^5.19.0",
-    "live-server": "^1.2.2"
+    "terser": "^5.44.1"
   }
 }
