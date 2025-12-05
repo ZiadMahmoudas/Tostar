@@ -2,9 +2,9 @@
 
 Professional toast notification library with **zero dependencies**, RTL support, smooth animations, and modern design.
 
-[![npm version](https://img.shields.io/npm/v/@yourusername/advanced-toast.svg)](https://www.npmjs.com/package/@yourusername/advanced-toast)
+[![npm version](https://img.shields.io/npm/v/@ZiadMahmoud/advanced-toast.svg)](https://www.npmjs.com/package/@ZiadMahmoud/advanced-toast)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dm/@yourusername/advanced-toast.svg)](https://www.npmjs.com/package/@yourusername/advanced-toast)
+[![Downloads](https://img.shields.io/npm/dm/@ZiadMahmoud/advanced-toast.svg)](https://www.npmjs.com/package/@ZiadMahmoud/advanced-toast)
 
 ## ✨ Features
 
@@ -23,17 +23,17 @@ Professional toast notification library with **zero dependencies**, RTL support,
 
 ### NPM
 ```bash
-npm install @yourusername/advanced-toast
+npm install @Ziad Mahmoud/advanced-toast
 ```
 
 ### Yarn
 ```bash
-yarn add @yourusername/advanced-toast
+yarn add @Ziko Mahmoud/advanced-toast
 ```
 
 ### CDN
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@yourusername/advanced-toast/dist/toast.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@Ziko-tostar/advanced-toast/dist/toast.min.js"></script>
 ```
 
 ## 🚀 Quick Start
@@ -202,10 +202,6 @@ MIT © [Your Name]
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 🐛 Issues
-
-Found a bug? Please [create an issue](https://github.com/yourusername/advanced-toast/issues)
 
 ## ⭐ Show Your Support
 

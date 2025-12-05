@@ -1,20 +1,6 @@
 {
   "name": "ziko-toaster",
-  "version": "1.0.2",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["toast", "notification", "toaster", "ziko"],
-   "files": ["dist", "src", "README.md"],
-
-  "license": "MIT",
-  "description": "Lightweight toast notification library"
-}
-
-{
-  "name": "@Ziko-toaster",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "🎉 Professional toast notification library with RTL support, animations, and zero dependencies",
   "main": "dist/toast.min.js",
   "module": "src/toast.js",
@@ -59,12 +45,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/advanced-toast.git"
+    "url": "https://github.com/ZiadMahmoudas/Tostar"
   },
-  "bugs": {
-    "url": "https://github.com/yourusername/advanced-toast/issues"
-  },
-  "homepage": "https://github.com/yourusername/advanced-toast#readme",
+  "homepage": "https://github.com/ZiadMahmoudas/Tostar#readme",
   "devDependencies": {
     "terser": "^5.19.0"
   }
