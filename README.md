@@ -26,16 +26,12 @@ Professional toast notification library with **zero dependencies**, RTL support,
 npm install ziko-toaster
 ```
 
-### Yarn
-```bash
-yarn add ziko-toaster
-```
-
 ### CDN
 ```html
+<!-- Styling -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ziko-toaster@latest/dist/toast.min.css">
 <!-- unpkg -->
 <script src="https://unpkg.com/ziko-toaster@latest/dist/toast.min.js"></script>
-
 <!-- jsDelivr -->
 <script src="https://cdn.jsdelivr.net/npm/ziko-toaster@latest/dist/toast.min.js"></script>
 ```
@@ -507,21 +503,17 @@ export default {
 
 ### Toast not showing?
 ```javascript
-// Make sure you're creating an instance
-const toast = new AdvancedToast(); // ✓ Correct
+window.addEventListener('DOMContentLoaded', () => {
+    const toast = new AdvancedToast();
 
+    window.showToast = function() {
+        toast.warning('تم الحفظ بنجاح! 🎉');
+    }
+});  // ✓ Correct
 // Not this:
 AdvancedToast.success('test'); // ✗ Wrong
 ```
 
-### Icons not showing?
-```javascript
-// For FontAwesome icons, include FontAwesome CSS first
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-// Then use icons
-toast.success('Done', { icon: 'fas fa-check' });
-```
 
 ### RTL not working?
 ```javascript

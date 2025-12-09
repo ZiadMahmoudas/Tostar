@@ -2,9 +2,9 @@
         /* Toast Styles */
         :root{
           --success:#38ef7d;
-          --error:"#f45c43";
-          --warning:"#f5576c";
-          --info:"#00f2fe";
+          --error:#f45c43;
+          --warning:yellow;
+          --info:#00f2fe;
         }
         .toast-container {
             position: fixed;
